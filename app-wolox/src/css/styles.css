@@ -1,0 +1,182 @@
+/* 1 Position 
+| 2 Box model 
+| 3 Tipogrphy 
+| 4 Visual 
+| 5 other */
+
+/* Basic Styles-------------------- */
+:root {
+  /* Colors  */
+  --wolox-green: #9fc739;
+  --wolox-blue: #00a7e8;
+  --light-grey: #f2f5fa;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62, 5%;
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navbar Styles-------------------- */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url('../img/Backgrounds/Bg_Header.png');
+}
+.navbar--img {
+  width: 150px;
+  margin: 3rem;
+}
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5rem;
+}
+.navbar-items--item {
+  padding-right: 10px;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.navbar-items--button {
+  padding: 10px 45px;
+  margin: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  color: var(--wolox-blue);
+  border: 1px solid var(--wolox-blue);
+}
+
+/* Welcome Section Styles--------------------  */
+.welcome {
+  justify-content: space-evenly;
+  background-image: url('../img/Backgrounds/Bg_Header.png');
+}
+.welcome--img {
+  margin: 30px 60px 30px 30px;
+  max-width: 400px;
+  min-width: 300px;
+  min-height: auto;
+  max-height: auto;
+}
+.welcome-title--light {
+  margin: auto 50px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 40px;
+}
+.welcome-title--bold {
+  font-weight: bold;
+}
+.welcome-title--brand {
+  font-weight: bold;
+  color: var(--wolox-green);
+}
+
+/* Woloxers Section Styles-------------------- */
+.woloxers {
+  background-color: var(--light-grey);
+}
+.woloxers-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  height: 500px;
+  background-image: url('../img/img_woloxer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.woloxers-img h3 {
+  font-size: 4rem;
+  color: var(--wolox-green);
+}
+.woloxers-img span {
+  font-size: 4rem;
+  color: var(--wolox-blue);
+}
+.twitter-img {
+  width: 50px;
+  height: 50px;
+  margin: 40px auto;
+}
+.woloxers-twitter {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.woloxers-twitter span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+.woloxers-img a {
+  padding: 12px 60px;
+  margin: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid var(--wolox-blue);
+}
+/* Woloxers right section Styles--------------------  */
+.woloxers-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 500px;
+}
+.woloxers-right h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.woloxers-right span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--wolox-blue);
+}
+.woloxers-right #span2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--wolox-green);
+}
+
+/* Beneficts Section Styles--------------------   */
+.beneficts {
+  height: 500px;
+}
+.beneficts-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.face {
+  height: 500px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--wolox-blue);
+}
