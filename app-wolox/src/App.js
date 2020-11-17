@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Woloxers from './components/Woloxers';
 import Beneficts from './components/Beneficts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Welcome />
       <Woloxers />
       <Beneficts />
+      <Footer />
     </div>
   );
 }
