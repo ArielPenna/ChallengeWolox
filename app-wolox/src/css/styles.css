@@ -17,10 +17,10 @@
   padding: 0;
 }
 html {
-  font-size: 62, 5%;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
-.App {
+.app {
   text-align: center;
 }
 .container {
@@ -34,6 +34,7 @@ html {
 .navbar {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   background-image: url('../img/Backgrounds/Bg_Header.png');
 }
@@ -69,14 +70,15 @@ html {
 /* Welcome Section Styles--------------------  */
 .welcome {
   justify-content: space-evenly;
+  width: 100%;
   background-image: url('../img/Backgrounds/Bg_Header.png');
 }
 .welcome--img {
-  margin: 30px 60px 30px 30px;
+  /* margin: 30px 60px 30px 30px; */
   max-width: 400px;
   min-width: 300px;
-  min-height: auto;
-  max-height: auto;
+  min-height: 300px;
+  max-height: 400px;
 }
 .welcome-title--light {
   margin: auto 50px;
@@ -94,6 +96,7 @@ html {
 
 /* Woloxers Section Styles-------------------- */
 .woloxers {
+  height: 500px;
   background-color: var(--light-grey);
 }
 .woloxers-img {
@@ -189,8 +192,48 @@ html {
 .beneficts-items {
   display: flex;
   flex-direction: column;
-  margin: 2rem 4rem;
+  margin: 2rem 3rem;
 }
 .beneficts-items p {
   margin-top: 1.5rem;
+}
+
+/* Footer Section Styles--------------------    */
+.footer {
+  height: 500px;
+  background-image: url('../img/Backgrounds/Bg_Footer.png');
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content h3 {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer-content span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--wolox-blue);
+}
+.footer a {
+  padding: 12px 40px;
+  margin: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--wolox-blue);
+  border-radius: 25px;
+  color: white;
+  border: 1px solid var(--wolox-blue);
+}
+.logo-footer {
+  width: 90px;
+  margin-top: 3rem;
 }
