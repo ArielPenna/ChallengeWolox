@@ -17,6 +17,7 @@
   padding: 0;
 }
 html {
+  display: flex;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -65,6 +66,11 @@ html {
   border-radius: 25px;
   color: var(--wolox-blue);
   border: 1px solid var(--wolox-blue);
+  transition: background-color 0.5s;
+}
+.navbar-items--button:hover {
+  background-color: var(--wolox-blue);
+  color: white;
 }
 
 /* Welcome Section Styles--------------------  */
@@ -74,11 +80,9 @@ html {
   background-image: url('../img/Backgrounds/Bg_Header.png');
 }
 .welcome--img {
-  /* margin: 30px 60px 30px 30px; */
-  max-width: 400px;
-  min-width: 300px;
-  min-height: 300px;
-  max-height: 400px;
+  width: 350px;
+  height: 350px;
+  padding-right: 2rem;
 }
 .welcome-title--light {
   margin: auto 50px;
@@ -96,7 +100,7 @@ html {
 
 /* Woloxers Section Styles-------------------- */
 .woloxers {
-  height: 500px;
+  height: auto;
   background-color: var(--light-grey);
 }
 .woloxers-img {
@@ -106,7 +110,7 @@ html {
   justify-content: center;
   width: 55%;
   height: 500px;
-  background-image: url('../img/img_woloxer.png');
+  background-image: url('../img/img_woloxer@3x.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,6 +148,11 @@ html {
   border-radius: 25px;
   color: white;
   border: 1px solid var(--wolox-blue);
+  transition: background-color 0.5s;
+}
+.woloxers-img a:hover {
+  background-color: white;
+  color: var(--wolox-blue);
 }
 /* Woloxers right section Styles--------------------  */
 .woloxers-right {
@@ -153,6 +162,7 @@ html {
   justify-content: center;
   width: 45%;
   height: 500px;
+  padding: 0 2rem;
 }
 .woloxers-right h3 {
   font-size: 2.5rem;
@@ -172,10 +182,12 @@ html {
 /* Beneficts Section Styles--------------------   */
 .beneficts {
   height: 500px;
+  margin-top: 3rem;
 }
 .beneficts-title {
   font-size: 2rem;
   font-weight: 400;
+  padding: 0 3rem;
 }
 .face {
   height: 500px;
@@ -185,6 +197,7 @@ html {
 }
 .beneficts-items--container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 2rem;
   justify-content: space-evenly;
@@ -232,6 +245,11 @@ html {
   border-radius: 25px;
   color: white;
   border: 1px solid var(--wolox-blue);
+  transition: background-color 0.5s;
+}
+.footer a:hover {
+  background-color: transparent;
+  color: var(--wolox-blue);
 }
 .logo-footer {
   width: 90px;

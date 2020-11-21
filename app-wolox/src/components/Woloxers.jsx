@@ -1,5 +1,6 @@
 import React from 'react';
 import twitter from '../img/twitter.png';
+
 export default function Navbar() {
   return (
     <section className="container woloxers">

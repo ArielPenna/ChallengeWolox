@@ -10,7 +10,7 @@ import workshops from '../img/Ic_Workshops.svg';
 export default function Navbar() {
   return (
     <section className="container beneficts">
-      <div>
+      <div id="beneficios">
         <h4 className="beneficts-title">
           Entre los beneficios que te ofrecemos se encuentran <span className="face">;)</span>
         </h4>
@@ -18,8 +18,7 @@ export default function Navbar() {
           <div className="beneficts-items">
             <img src={clock} className="beneficts-icons" alt="Wolox-benefict" />
             <p>
-              Flexibilidad
-              <br />
+              Flexibilidad <br />
               Horaria
             </p>
           </div>
@@ -44,8 +43,7 @@ export default function Navbar() {
           <div className="beneficts-items">
             <img src={laptop} className="beneficts-icons" alt="Wolox-benefict" />
             <p>
-              Semana
-              <br />
+              Semana <br />
               Remota
             </p>
           </div>
