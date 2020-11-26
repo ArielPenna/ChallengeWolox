@@ -6,7 +6,8 @@ import Welcome from './components/Welcome';
 import Woloxers from './components/Woloxers';
 import Beneficts from './components/Beneficts';
 import Footer from './components/Footer';
-import Register from './components/Register';
+import Register from './pages/Register';
+import TechList from './pages/TechList';
 
 import './css/styles.css';
 
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/techList">
+            <TechList />
           </Route>
           <Route path="/">
             <Navbar />

@@ -18,8 +18,7 @@ export default function Navbar() {
           <div className="beneficts-items">
             <img src={clock} className="beneficts-icons" alt="Wolox-benefict" />
             <p>
-              Flexibilidad <br />
-              Horaria
+              Flexibilidad <br /> Horaria
             </p>
           </div>
           <div className="beneficts-items">
