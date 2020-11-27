@@ -1,4 +1,13 @@
 # challengeWolox
+<p align="center">
+
+  <a href="mailto:arielpenna@gmail.com" target="blank">
+    <img align="center" src="https://github.com/ArielPenna/challengeWolox/blob/main/app-wolox/src/img/favicon.png?raw=true" alt="Ariel Full Stack" height="50px" width="50px" />
+  </a>
+                                                                                                                                                   
+</p>
+                                                                                                                                              
+
 
 Para correr el proyecto:<br>
 1- ingresar a la carpeta app-wolox.<br>
