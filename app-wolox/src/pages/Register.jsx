@@ -16,6 +16,7 @@ export class NewUser extends React.Component {
       state: '',
       phone: '',
       password: '',
+      repeatPassword: '',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,23 +34,22 @@ export class NewUser extends React.Component {
       .then((res) => {
         console.info(res);
       })
+      .then(() => {
+        const { password, repeatPassword } = this.state;
+        if (!password || !repeatPassword) {
+          alert('Por favor complete los campos');
+        }
+        if (password !== repeatPassword) {
+          alert('Las contraseñas no coinciden');
+          return false;
+        }
+        return true;
+      })
       .catch((err) => console.error(err));
   }
 
-  comparaPassword() {
-    const { password, repeatPassword } = this.state;
-    if (!password || !repeatPassword) {
-      alert('Por favor complete los campos');
-    }
-    if (password !== repeatPassword) {
-      alert('Las contraseñas no coinciden');
-      return false;
-    }
-    return true;
-  }
-
   render() {
-    const { address, country, email, name, lastName, phone, state } = this.state;
+    const { address, country, email, name, lastName, phone, state, password, repeatPassword } = this.state;
     return (
       <div className="register">
         <h3>Registrate en Wolox</h3>
@@ -91,9 +91,9 @@ export class NewUser extends React.Component {
                 name="password"
                 placeholder="Debe tener 1 mayuscula, una minuscula y 1 numero"
                 maxLength="6"
-                // pattern="/^(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ]/"
+                // pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/"
                 onChange={this.handleChange}
-                // value={password}
+                value={password}
                 required
               />
             </div>
@@ -105,9 +105,9 @@ export class NewUser extends React.Component {
                 name="repeatPassword"
                 placeholder="Debe tener 1 mayuscula, una minuscula y 1 numero"
                 maxLength="6"
-                // pattern="/^(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ]/"
+                // pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/"
                 onChange={this.handleChange}
-                // value={repeatPassword}
+                value={repeatPassword}
                 required
               />
             </div>

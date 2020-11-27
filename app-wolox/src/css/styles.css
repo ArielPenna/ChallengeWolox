@@ -332,3 +332,38 @@ html {
   background-color: var(--wolox-green);
   color: white;
 }
+.techCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--light-grey);
+  border: 1px solid var(--wolox-blue);
+  border-radius: 5px;
+}
+.techCard img {
+  height: 50px;
+}
+.techCard h3 {
+  padding: 4px;
+}
+.techCard h4 {
+  padding: 4px;
+}
+.techCard p {
+  padding: 2px;
+}
+.techList--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.techList {
+  background-image: url('../img/Backgrounds/Bg_Footer@2x.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
